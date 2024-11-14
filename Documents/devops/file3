@@ -1,0 +1,27 @@
+public class Car {
+    // Fields (attributes)
+    String make;
+    String model;
+    int year;
+
+    // Constructor to initialize the object
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method (behavior)
+    public void displayInfo() {
+        System.out.println("Car Info: " + year + " " + make + " " + model);
+    }
+
+    // Main method to run the program
+    public static void main(String[] args) {
+        // Create an object of Car
+        Car myCar = new Car("Toyota", "Corolla", 2020);
+        
+        // Call the method to display car info
+        myCar.displayInfo();
+    }
+}
